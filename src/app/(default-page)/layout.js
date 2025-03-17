@@ -1,5 +1,4 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "/Users/macbookpro/HRD /next-js/my-app/src/app/globals.css";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/ui/app-sidebar"
 import SearchComponent from "@/components/mycomponent/searchComponent";
@@ -25,7 +24,18 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-      {children}
+       <SidebarProvider>
+        <AppSidebar />
+        <main className="flex flex-col w-full items-center">
+          <section className="flex w-full px-10 py-5">
+            <SidebarTrigger className={"p-5"}/>
+            <SearchComponent/>
+          </section>
+          <section className="bg-gray-200 rounded-2xl w-[90%] h-auto">
+            {children}
+          </section>
+        </main>
+      </SidebarProvider>
       </body>
     </html>
   );

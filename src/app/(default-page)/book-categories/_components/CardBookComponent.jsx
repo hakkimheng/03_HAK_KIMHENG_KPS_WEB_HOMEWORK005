@@ -2,11 +2,10 @@ import { InteractiveHoverButton } from '@/components/magicui/interactive-hover-b
 import React from 'react'
 import DropDownFilterComponent from './DropDownFilterComponent'
 import { GetCatagory } from '@/service/books.service'
-import { Link } from 'lucide-react'
 
 const CardBookComponent = async ({ books }) => {
     const catagory = await GetCatagory()
-    
+
     return (
         <>
             <div className="mx-10">
@@ -29,10 +28,9 @@ const CardBookComponent = async ({ books }) => {
                                 <div className="md:flex relative h-55 pr-5 bg-white rounded-2xl">
                                     <div className="md:shrink-0 absolute bottom-2 left-2 flex flex-col gap-3">
                                         <img className="h-38 w-full rounded-2xl object-cover md:h-full md:w-42" src={book.image} alt={book.book_title} />
-                                        <InteractiveHoverButton>
-                                            <a href='/read-full-acticle'>read full article</a>
-                                            
-                                            
+                                        <InteractiveHoverButton >
+                                            <a href={`/read-full-acticle/${book.id}`}>read full article</a>
+                                    
                                             </InteractiveHoverButton>
                                     </div>
                                     <div className="pt-5 w-120 rounded-2xl pl-50">

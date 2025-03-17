@@ -1,7 +1,8 @@
 "use client"
-import React from 'react'
+import { useState } from 'react'
 
 function DropDownFilterComponent({ data }) {
+    const [value, setValue] = useState('');
     return (
         <div>
             <div class="w-[200px] text-gray-900 dark:text-gray-100">
