@@ -34,8 +34,8 @@ export const GetAllCartoon = async () => {
     }
 }
 
-export const GetDetail = async (id) => {
-    let type = "book"
+export const GetDetail = async (id , type) => {
+
     let rs;
     try {
         if(type === "book"){

@@ -29,7 +29,7 @@ const CardBookComponent = async ({ books }) => {
                                     <div className="md:shrink-0 absolute bottom-2 left-2 flex flex-col gap-3">
                                         <img className="h-38 w-full rounded-2xl object-cover md:h-full md:w-42" src={book.image} alt={book.book_title} />
                                         <InteractiveHoverButton >
-                                            <a href={`/read-full-acticle/${book.id}`}>read full article</a>
+                                            <a href={`/read-full-acticle/${book.id}/book`}>read full article</a>
                                     
                                             </InteractiveHoverButton>
                                     </div>

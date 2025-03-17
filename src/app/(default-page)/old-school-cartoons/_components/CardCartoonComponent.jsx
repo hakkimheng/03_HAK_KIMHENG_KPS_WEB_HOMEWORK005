@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import DropDownFilterComponent from '../../book-categories/_components/DropDownFilterComponent';
 
@@ -18,7 +19,11 @@ function CardCartoonComponent({ cartoon }) {
         <div className='flex flex-wrap'>
                 {
                     cartoon.payload.map((cartoon, index) => (
-                            <div key={index} class="relative cursor-pointer dark:text-white w-70 h-100 m-20">
+                            <div key={index} class="relative cursor-pointer  dark:text-white w-70 h-100 m-20" onClick={
+                                () =>(
+                                    window.location.href = `/read-full-acticle/${cartoon.id}/cartoon`
+                                )
+                            }>
                                 <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-indigo-500 rounded-lg dark:bg-gray-200"></span>
                                 <div
                                     class="relative p-3 bg-white dark:bg-gray-800 border-2 border-indigo-500 dark:border-gray-300 rounded-lg hover:scale-105 transition duration-500 h-103">
