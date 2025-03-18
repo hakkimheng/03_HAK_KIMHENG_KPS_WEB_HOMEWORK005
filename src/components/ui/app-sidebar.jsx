@@ -1,4 +1,4 @@
-
+"use client";
 import {
   Sidebar,
   SidebarContent,
@@ -9,8 +9,11 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
 import { bars } from "@/data/SideBarData"
+import { usePathname } from "next/navigation"
 
 export function AppSidebar() {
+  const pathname = usePathname() || "/";
+
   return (
     <Sidebar>
       <SidebarContent>
@@ -26,10 +29,10 @@ export function AppSidebar() {
             <SidebarMenu className={"p-4"}>
               {bars.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild className={"hover:bg-gray-300 py-6"}>
+                  <SidebarMenuButton asChild className={`hover:bg-gray-300 py-6 ${(pathname === "/" && item.url === "/") || pathname === item.url ? 'bg-gray-600' : ''}`}>
                     <a href={item.url} className="w-50 h-10">
                       <item.icon className="stroke-red-700 !h-6 !w-6" />
-                      <span className="font-medium text-lg">{item.title}</span>
+                      <span className={`font-medium text-lg ${(pathname === "/" && item.url === "/") || pathname === item.url ? 'text-white' : ''}`}>{item.title}</span>
                     </a>
                   </SidebarMenuButton>
                 </SidebarMenuItem>

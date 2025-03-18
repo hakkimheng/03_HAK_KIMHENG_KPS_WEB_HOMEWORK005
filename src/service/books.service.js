@@ -3,8 +3,8 @@ export const GetAllBook = async () => {
         const rs = await fetch(
         "https://nextjs-homework005.vercel.app/api/book"
         )
-        const data = await rs.json()
-        return data;
+        const {payload} = await rs.json()
+        return payload;
     }catch(e){
         console.log(e)
     }
@@ -15,8 +15,8 @@ export const GetCatagory = async () => {
         const rs = await fetch(
         "https://nextjs-homework005.vercel.app/api/book_category"
         )
-        const data = await rs.json()
-        return data;
+        const {payload} = await rs.json()
+        return payload;
     }catch(e){
         console.log(e)
     }
@@ -27,8 +27,19 @@ export const GetAllCartoon = async () => {
         const rs = await fetch(
         "https://nextjs-homework005.vercel.app/api/cartoon"
         )
-        const data = await rs.json()
-        return data;
+        const {payload} = await rs.json()
+        return payload;
+    }catch(e){
+        console.log(e)
+    }
+}
+export const GetCartoonCategory = async () => {
+    try {
+        const rs = await fetch(
+            "https://nextjs-homework005.vercel.app/api/cartoon_genre"
+        )
+        const {payload} = await rs.json()
+        return payload;
     }catch(e){
         console.log(e)
     }

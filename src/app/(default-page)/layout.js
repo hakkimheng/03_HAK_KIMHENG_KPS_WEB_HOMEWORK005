@@ -20,10 +20,6 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
        <SidebarProvider>
         <AppSidebar />
         <main className="flex flex-col w-full items-center">
@@ -36,7 +32,5 @@ export default function RootLayout({ children }) {
           </section>
         </main>
       </SidebarProvider>
-      </body>
-    </html>
   );
 }

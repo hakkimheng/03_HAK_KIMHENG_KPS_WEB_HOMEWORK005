@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import BreadCrumbComponent from "./_components/BreadCrumbComponent";
  
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,12 +18,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
-      >
+
+    <section className="w-full h-[100vh] bg-gray-200 flex flex-col justify-center items-center pb-10">
+      <div className="p-20 self-start">
+      <BreadCrumbComponent/>
+      </div>
+      <section className="bg-white h-200 w-[90%] rounded-3xl">
         {children}
-      </body>
-    </html>
+        </section>
+      </section>
+        
   );
 }
