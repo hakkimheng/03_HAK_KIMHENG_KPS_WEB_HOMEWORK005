@@ -4,13 +4,13 @@ import { GetAllBook, GetCatagory } from "@/service/books.service";
 import DropDownFilterComponent from "./_components/DropDownFilterComponent";
 
 const BookCatagories = async () => {
-  const data = await GetAllBook();
+  const books = await GetAllBook();
   const catagory = await GetCatagory();
   return (
     <>
  
       <DropDownFilterComponent data={catagory} />
-      <CardBookComponent books={data} />
+      <CardBookComponent books={books} />
     </>
   );
 };
