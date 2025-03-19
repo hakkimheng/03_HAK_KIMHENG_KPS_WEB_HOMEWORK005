@@ -28,14 +28,13 @@ function BreadCrumbComponent() {
                 strokeLinejoin="round"
               ></path>
             </svg>
-            {"  "}
-            <span className="text-2xl">Home</span>
+            <span className="text-lg font-bold hover:text-[#087E8B] ">Home</span>
           </Link>
         </li>
         <li className="flex items-center space-x-3">
           <div
             aria-hidden="true"
-            className="h-4 w-px rotate-12 rounded-full bg-gray-300"
+            className="h-4 w-px rotate-12 rounded-full bg-red-300"
           ></div>
           <Link
             href={`/${name}`}
@@ -64,14 +63,13 @@ function BreadCrumbComponent() {
                 strokeLinejoin="round"
               ></path>
             </svg>
-            {"  "}
-            <span className="text-2xl">{name}</span>
+            <span className="text-lg font-bold hover:text-[#087E8B] ">{name}</span>
           </Link>
         </li>
         <li className="flex items-center space-x-3" aria-current="page">
           <div
             aria-hidden="true"
-            className="h-4 w-px rotate-12 rounded-full bg-gray-300"
+            className="h-4 w-px rotate-12 rounded-full bg-red-300"
           ></div>
 
           <span className="flex items-center space-x-1">
@@ -81,7 +79,7 @@ function BreadCrumbComponent() {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="red"
-              className="size-8"
+              className="size-7"
             >
               <path
                 strokeLinecap="round"
@@ -89,8 +87,7 @@ function BreadCrumbComponent() {
                 d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
               />
             </svg>
-            {"  "}
-            <span className="text-red-400 font-bold text-2xl">{title}</span>
+            <span className="text-red-400 font-bold text-lg">{title}</span>
           </span>
         </li>
       </ul>

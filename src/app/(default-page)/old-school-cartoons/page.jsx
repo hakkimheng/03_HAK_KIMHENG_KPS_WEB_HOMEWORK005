@@ -8,20 +8,13 @@ const OldScoolCartoonsPage = async () => {
   const cartoonCategory = await GetCartoonCategory();
   return (
     <>
-          <div className="mx-10">
-        <div className="flex justify-between items-center">
-          <p className="p-5 bg-[#bbe6eb] font-bold text-[#087E8B] rounded-2xl inline-block my-5">
-            All Books
-          </p>
-          <DropDownFilterComponent
-          data={cartoonCategory} />
-        </div>
 
-        <hr className="h-1  bg-gray-500" />
-      </div>
+          <DropDownFilterComponent
+            data={cartoonCategory} />
+     
       <CardCartoonComponent
-      cartoon = {cartoon}
-    />
+        cartoon={cartoon}
+      />
     </>
   )
 }

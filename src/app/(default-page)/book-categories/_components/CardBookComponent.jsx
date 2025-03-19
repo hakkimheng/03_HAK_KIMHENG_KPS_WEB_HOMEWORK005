@@ -16,7 +16,7 @@ const CardBookComponent = ({ books }) => {
     
     return (
         <> 
-            <section className='flex pt-30 justify-center h-200 overflow-scroll my-5'>
+            <section className='flex pt-30 justify-center h-180 overflow-scroll my-5'>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-40">
                     {books && books.map((book, index) => (
                         <div key={index} className="flex">
@@ -35,7 +35,7 @@ const CardBookComponent = ({ books }) => {
                                                 }
                                             }}
                                         >
-                                            Read Full Acticle
+                                            <p className='text-sm'>Read Full Acticle</p>
                                         </Link>
                                             </InteractiveHoverButton>
                                     </div>
