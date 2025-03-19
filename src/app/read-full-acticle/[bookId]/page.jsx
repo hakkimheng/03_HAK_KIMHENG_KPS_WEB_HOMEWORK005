@@ -4,7 +4,7 @@ import { GetDetail } from '@/service/books.service'
 
 
 const BookIdPage = async ({ params, searchParams }) => {
-  const type = searchParams?.type || null; 
+  const type = await searchParams?.type || null; 
   const data = await GetDetail(params.bookId, type);
   return <BookDetailComponent data={data} />;
 };

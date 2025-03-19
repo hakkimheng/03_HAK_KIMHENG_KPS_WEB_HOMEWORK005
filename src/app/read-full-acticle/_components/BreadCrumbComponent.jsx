@@ -32,7 +32,7 @@ function BreadCrumbComponent() {
               ></path>
             </svg>
             <svg
-              class=" hidden group-hover:block"
+              className=" hidden group-hover:block"
               xmlns="http://www.w3.org/2000/svg"
               width="22"
               height="22"
@@ -42,16 +42,16 @@ function BreadCrumbComponent() {
               <path
                 d="M13.5 12c0 3.18-2.57 5.75-5.75 5.75S2 15.18 2 12s2.57-5.75 5.75-5.75"
                 stroke="#087E8B"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></path>
               <path
                 d="M10 12c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6"
                 stroke="#087E8B"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></path>
             </svg>
             <span className="text-lg font-bold">Home</span>
@@ -84,7 +84,7 @@ function BreadCrumbComponent() {
               ></path>
             </svg>
             <svg
-              class=" hidden group-hover:block"
+              className=" hidden group-hover:block"
               xmlns="http://www.w3.org/2000/svg"
               width="22"
               height="22"
@@ -94,16 +94,16 @@ function BreadCrumbComponent() {
               <path
                 d="M13.5 12c0 3.18-2.57 5.75-5.75 5.75S2 15.18 2 12s2.57-5.75 5.75-5.75"
                 stroke="#087E8B"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></path>
               <path
                 d="M10 12c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6"
                 stroke="#087E8B"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></path>
             </svg>
             <span className="text-lg font-bold">{name}</span>
