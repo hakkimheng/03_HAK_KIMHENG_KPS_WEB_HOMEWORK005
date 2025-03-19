@@ -1,7 +1,6 @@
 "use client"
 import { useSearchParams } from 'next/navigation'
 import React from 'react'
-import BreadCrumbComponent from './BreadCrumbComponent';
 
 const BookDetailComponent = ({ data }) => {
   const searchParams = useSearchParams();
@@ -10,7 +9,7 @@ const BookDetailComponent = ({ data }) => {
     <>
     <section className='relative '>
       <img
-        className="w-70 rounded-2xl absolute right-20 -top-30 "
+        className="w-70 rounded-2xl absolute right-20 -top-30"
         src={data.image}
         alt={data.book_title}
       />
