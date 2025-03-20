@@ -12,7 +12,7 @@ const feature = [
     },
     {
         name: "Cartoon",
-        image: "https://i.pinimg.com/736x/de/5d/2e/de5d2e30168f405794f13cb352f57818.jpg",
+        image: "https://i.pinimg.com/736x/72/d3/eb/72d3eb5ff288c66e647ed51d6dc7f9e5.jpg",
         url : "/old-school-cartoons",
         description: "Explore classic and beloved cartoon series from the past decades.",
         icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="white" className="size-6">
